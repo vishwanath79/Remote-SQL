@@ -2,10 +2,12 @@
 import MySQLdb
 import prettytable
 from prettytable import from_db_cursor
+
+# Get database information and assign to variables for easier use
 host = raw_input('Enter host name ')
 user = raw_input('Enter username ')
 passwd = raw_input('Enter password ')
-database = raw_input('Enter DB ')
+database = raw_input('Enter DB name ')
 db = MySQLdb.connect(host, # your host, usually localhost
                      user, # your username
                       passwd, # your password
